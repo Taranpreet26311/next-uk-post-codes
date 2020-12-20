@@ -11,6 +11,7 @@ export async function getServerSideProps() {
     // Fetch data from the external API
     const res = await axios.get(`http://api.postcodes.io/random/postcodes`)
     const data = res.data.result;
+    console.log('Server running in ECS');
 
     // Pass the data to the page via props
     return { props: { data } }
