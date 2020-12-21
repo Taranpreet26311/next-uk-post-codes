@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Homepage = ({ data }) => {
-    return <h1>{data.country} ------- {data.postcode}</h1>;
+    return <h1>{data.country} ,,.--- {data.postcode}</h1>;
 }
 
 export default Homepage;
